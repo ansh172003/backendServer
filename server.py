@@ -39,6 +39,3 @@ def _build_cors_preflight_response():
 def _corsify_actual_response(response):
     response.headers.add('Access-Control-Allow-Credentials', 'true')
     return response
-
-if __name__ == '__main__':
-    app.run(debug=True)
